@@ -26,7 +26,6 @@ const Card: React.FC<CardProps> = ({ image }) => {
           >
             <div className="absolute bg-black pointer-events-none opacity-50 h-full w-full"></div>
             <motion.h1
-              //className="bg-white font-semibold text-sm z-10 px-3 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75"
               className="bg-white font-semibold text-[10px] md:text-sm z-10 px-3 py-2 rounded-full flex items-center gap-[0.5ch] hover:opacity-75"
               initial={{ y: 10 }}
               animate={{ y: 0 }}
@@ -42,7 +41,7 @@ const Card: React.FC<CardProps> = ({ image }) => {
         src={image}
         alt={image}
         fill
-        sizes="(max-width: 200px) 100vw, (max-width: 200px) 50vw, 33vw"
+        sizes="(max-width: 250px) 100vw, (max-width: 180px) 50vw, 33vw"
         style={{ objectFit: "cover" }}
       />
     </motion.div>

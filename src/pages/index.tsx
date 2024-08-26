@@ -76,8 +76,7 @@ export default function Home() {
 
         <div className="flex overflow-hidden mt-10 [mask-image:linear-gradient(to_left,transparent,black,transparent)]">
           <motion.div
-            className="flex gap-4 
-            "
+            className="flex gap-4"
             ref={sliderRef}
             style={{ x: xTranslation }}
             onHoverStart={() => {
